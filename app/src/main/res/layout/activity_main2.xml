@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,29 +26,32 @@
                 android:id="@+id/podaj_rozmiar_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Podaj rozmiar 1 pitcy!(cm)" />
+                android:text="@string/rozmiar_1_not" />
 
             <EditText
                 android:id="@+id/rozmiar_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="30"
-                android:autofillHints="30"
+                android:hint="@string/h1"
+                android:autofillHints="@string/h1"
+                android:importantForAutofill="no"
                 android:inputType="number" />
 
             <TextView
                 android:id="@+id/podaj_cene_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Podaj cene 1 pitcy!" />
+                android:text="@string/cena_1_not" />
 
 
             <EditText
                 android:id="@+id/cena_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="15.99"
-                android:inputType="number|numberDecimal" />
+                android:hint="@string/h2"
+                android:autofillHints="@string/h2"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned|numberDecimal" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -61,29 +65,32 @@
                 android:id="@+id/podaj_rozmiar_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Podaj rozmiar 2 pitcy!(cm)" />
+                android:text="@string/rozmiar_2_not" />
 
             <EditText
                 android:id="@+id/rozmiar_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="50"
-                android:autofillHints="50"
+                android:hint="@string/h3"
+                android:autofillHints="@string/h3"
+                android:importantForAutofill="no"
                 android:inputType="number" />
 
             <TextView
                 android:id="@+id/podaj_cene_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Podaj cene 2 pitcy!" />
+                android:text="@string/cena_2_not" />
 
 
             <EditText
                 android:id="@+id/cena_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="22.99"
-                android:inputType="number|numberDecimal" />
+                android:hint="@string/h4"
+                android:autofillHints="@string/h4"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned|numberDecimal" />
         </LinearLayout>
     </LinearLayout>
 
@@ -92,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:src="@drawable/pizza"
-        android:contentDescription="button"/>
+        android:contentDescription="@string/button_desc"/>
 
     <TextView
         android:id="@+id/wynik"

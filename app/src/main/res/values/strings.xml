@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Pizza</string>
-    <string name="background_description">Background image</string>
+
+
+    <string name="button_desc">Submit button</string>
+    <string name="rozmiar_1_not">Podaj rozmiar 1 pitcy!(cm)</string>
+    <string name="rozmiar_2_not">Podaj rozmiar 2 pitcy!(cm)</string>
+    <string name="h1">30</string>
+    <string name="h2">15.99</string>
+    <string name="h3">50</string>
+    <string name="h4">22.99</string>
+    <string name="cena_1_not">Podaj cene 1 pitcy!</string>
+    <string name="cena_2_not">Podaj cene 2 pitcy!</string>
+
 </resources>
